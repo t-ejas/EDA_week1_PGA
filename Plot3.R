@@ -16,3 +16,4 @@ plot(data_pwr$Time,data_pwr$Sub_metering_1,type="n",xlab="",ylab="Energy sub met
 with(data_pwr,lines(Time,as.numeric(as.character(Sub_metering_1))))
 with(data_pwr,lines(Time,as.numeric(as.character(Sub_metering_2)),col="red"))
 with(data_pwr,lines(Time,as.numeric(as.character(Sub_metering_3)),col="green"))
+legend("top right", lty=2, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
